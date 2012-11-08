@@ -1,0 +1,10 @@
+C:\Visual Studio 2010\multithreadedmailer\multithreadedmailer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio 2010\multithreadedmailer\multithreadedmailer\bin\Debug\multithreadedmailer.exe
+C:\Visual Studio 2010\multithreadedmailer\multithreadedmailer\bin\Debug\multithreadedmailer.pdb
+C:\Visual Studio 2010\multithreadedmailer\multithreadedmailer\obj\x86\Debug\multithreadedmailer.exe
+C:\Visual Studio 2010\multithreadedmailer\multithreadedmailer\obj\x86\Debug\multithreadedmailer.pdb
+C:\Visual Studio 2010\multithreadedmailer2\multithreadedmailer\obj\x86\Debug\multithreadedmailer.exe
+C:\Visual Studio 2010\multithreadedmailer2\multithreadedmailer\obj\x86\Debug\multithreadedmailer.pdb
+C:\Visual Studio 2010\multithreadedmailer2\multithreadedmailer\bin\Debug\multithreadedmailer.exe
+C:\Visual Studio 2010\multithreadedmailer2\multithreadedmailer\bin\Debug\multithreadedmailer.pdb
+C:\Visual Studio 2010\multithreadedmailer2\multithreadedmailer\obj\x86\Debug\ResolveAssemblyReference.cache
