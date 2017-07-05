@@ -70,9 +70,9 @@ namespace multithreadmailer
         
         public static void Main(string[] args)
         {
-            //download newswire page
+            //download newsblast page
             WebClient wclient = new WebClient();
-            Byte[] pageData = wclient.DownloadData("http://newswire.uark.edu/email/default.aspx");
+            Byte[] pageData = wclient.DownloadData("http://newsblast.acme.edu/email/default.aspx");
             string pageHtml = Encoding.ASCII.GetString(pageData);
 
             //Read email adresses from text file in the current directory
@@ -87,7 +87,7 @@ namespace multithreadmailer
 
             //Read email adresses SQL into memory
             
-            //using (SqlConnection cnn = new SqlConnection("server=(local);database=Newswire;Integrated Security=SSPI"))
+            //using (SqlConnection cnn = new SqlConnection("server=(local);database=Newsblast;Integrated Security=SSPI"))
             //{
             //    SqlDataAdapter da = new SqlDataAdapter("select email from emailTest", cnn);
             //    DataSet ds = new DataSet();
@@ -109,7 +109,7 @@ namespace multithreadmailer
                 {
                     SmtpClient client = new SmtpClient(args[0]);
                     client.SendCompleted += SendCompletedCallback;
-                    MailAddress from = new MailAddress("newswire@uark.edu");
+                    MailAddress from = new MailAddress("newsblast@acme.edu");
                     MailAddress to = new MailAddress(user);
                     MailMessage message = new MailMessage(from, to);
                     try
@@ -118,7 +118,7 @@ namespace multithreadmailer
                         message.IsBodyHtml = true;
                         message.Body = (pageHtml);
                         message.BodyEncoding = Encoding.UTF8;
-                        message.Subject = "Arkansas Newswire Headlines";
+                        message.Subject = "Arkansas Newsblast Headlines";
                         message.SubjectEncoding = System.Text.Encoding.UTF8;
                         string userState = String.Format(user);
                         client.SendCompleted += delegate
